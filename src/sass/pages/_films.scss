@@ -1,0 +1,77 @@
+.section-films{
+    position: relative;
+    height: 100vh;
+
+    &__bg-hero{
+        background-image: url("https://images.pexels.com/photos/1488312/pexels-photo-1488312.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260");
+        background-size: cover;
+        background-position:center;
+        position: fixed;
+        height: 100%;
+        width: 100%;
+    }
+}
+
+.sectionfilms__content{
+    padding: 8rem 0rem 2rem 0;
+    position: relative;
+    z-index: 10;
+    background-color: #fff;
+
+    &--vid{
+        margin: 0 20rem;
+        position: relative;
+        background-color: #fff;
+        display: flex;
+        justify-content: space-evenly;
+
+        &-sec{
+            flex: 1;
+            display: flex;
+            flex-direction: column;
+
+            &:not(:last-child){
+                margin-right: 1rem;
+            }
+        }
+    }
+}
+
+.sectionfilms__trio{
+    padding: 8rem 0rem 2rem 0;
+    position: relative;
+    z-index: 10;
+    background-color: #fff;
+
+    &--vid{
+        margin: 0 20rem;
+        position: relative;
+        background-color: #fff;
+        display: flex;
+        justify-content: space-between;
+
+        &-sec{
+            flex: 1;
+            display: flex;
+            flex-direction: column;
+
+            &:not(:last-child){
+                margin-right: 1rem;
+            }
+        }
+    }
+
+    &--reels{
+        margin: 0 20rem;
+        position: relative;
+        background-color: #fff;
+        display: flex;
+        justify-content: space-between;
+
+        &-sec{
+            &-vid{
+                object-fit: contain;
+            }
+        }
+    }
+}

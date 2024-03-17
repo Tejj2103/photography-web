@@ -1,0 +1,50 @@
+.photography-hero{
+    position: relative;
+    height: 100vh;
+
+    &__bg-hero{
+        background-image: url("https://images.pexels.com/photos/8333744/pexels-photo-8333744.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260");
+        background-size: cover;
+        background-position:center;
+        position: fixed;
+        height: 100%;
+        width: 100%;
+    }
+}
+
+.photography__content{
+    padding: 2rem 0rem 2rem 0;
+    position: relative;
+    z-index: 10;
+    background-color: #fff;
+
+    &--cards{
+        margin: 0 20rem;
+        display: flex;
+        align-items: center;
+        
+        &-img{
+            width: 50%;
+            padding: 2rem;
+            &--image{
+                width: 100%;
+                height: 60rem;
+                object-fit: cover;
+                border-top-left-radius:40rem;
+                border-top-right-radius:40rem;
+            }
+        }
+        &-text{
+            padding: 2rem;
+            width: 50%;
+
+            &--btn{
+                border: none;
+                background: none;
+                font-size: 2rem;
+                cursor: pointer;
+                padding-top: 2rem;
+            }
+        }
+    }
+}
